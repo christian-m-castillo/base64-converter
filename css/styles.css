@@ -1,0 +1,96 @@
+body {
+  font-family: Helvetica;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  color: #fff;
+}
+
+.container {
+  width: 450px;
+  max-width: 90vw;
+  margin: 7vmin auto;
+  padding: 1vmin 4vmin 3vmin 4vmin;
+  background-color: rgb(26, 123, 123);
+  border: 1px white solid;
+  border-radius: 10px;
+  box-shadow: 1px 1px 15px rgba(168, 254, 255, 1);
+  display: flex;
+  flex-direction: column;
+  
+}
+
+h1 {
+  font-size: 4vmin;
+  text-align: center;
+  margin-bottom: 1vmin;
+  font-weight: 400;
+}
+
+.upload-section {
+  width: 75%;
+  border: 1px white solid;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 10px 20px;
+  box-shadow: 1px 1px 5px rgba(168, 254, 255, .75);
+  background-color: #777;
+  display: flex;
+  justify-content: flex-end;
+}
+
+label {
+  display: none;
+}
+
+
+
+.convert-button {
+  width: 84%;
+  margin: auto;
+  background-color: rgb(196, 100, 68);
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  font-family: helvetica;
+  font-weight: 900;
+  padding: 8px;
+  box-shadow: 1px 1px 5px rgba(168, 254, 255, .75);
+  cursor: pointer;
+}
+
+.convert-button:hover {
+  background-color: brown;
+}
+
+.convert-button:active {
+  background-color: orangered;
+}
+
+p {
+  width: 80%;
+  margin: 20px auto 0px auto;
+}
+
+.result-section {
+  width: 77%;
+  height: 200px;
+  border: 1px solid rgb(255, 254, 254);
+  border-radius: 10px;
+  margin: 22px auto;
+  background-color: #777;
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  box-shadow: 1px 1px 5px rgba(168, 254, 255, .75);
+  word-break: break-all;
+  overflow: hidden;
+}
+
+.img-result {
+  width: 77%;
+  height: auto
+}
+
+.img-result img {
+  width: 100%;
+}
