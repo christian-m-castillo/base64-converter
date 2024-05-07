@@ -24,7 +24,8 @@ function convertToBase64() {
   } else if (imageUrlInput.value.trim() !== '') {
     // If image URL is provided
     const imageUrl = imageUrlInput.value.trim();
-    fetch(imageUrl)
+    const corsProxyUrl = `https://cors-anywhere.herokuapp.com/${imageUrl}`;
+    fetch(corsProxyUrl)
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
