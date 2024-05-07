@@ -11,14 +11,17 @@
     <h1>Base64 Image Converter</h1>
     <div class="upload-section">
       
-        <div class="flex-item"><label for="fileInput" class="upload-label">Select an image file:</label></div>
-        <div class="flex-item"><input type="file" id="fileInput" accept="image/jpeg, image/png, image/heic, image/webp" class="fileinput"></div>
+        <label for="fileInput" class="upload-label">Upload Image or Enter Direct URL</label>
+        <input type="text" id="imageUrlInput" class="url-input" placeholder="https://www.example.com/image.jpg">
+        <input type="file" id="fileInput" accept="image/jpeg, image/png, image/heic, image/webp" class="file-input">
         
     </div>
     <button onclick="convertToBase64()" class="convert-button">Convert</button>
-    <p>Use the following string as an <code>< img src = "" ></code> value. All of the image data is contained within this string, and computed soley within your browser.</p>
+    <p class="explanation">Use the following string as an <code>< img src = "" ></code> value. All of the image data is contained within this string, and computed soley within your browser.</p>
     <div id="result" class="result-section"></div>
-    <div id="image-result" class="img-result"></div>
+    <div class="copy-button-box">
+      <button id="copyButton" class="copy-button" onclick="copyToClipboard()">Copy to Clipboard</button>
+    </div>
   </div>
 
   <img src="" alt="">
